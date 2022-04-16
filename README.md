@@ -61,6 +61,7 @@ Id is  an optional feild Controller and action are compulsory. If action and con
 -It is a parent class of many derived classes that have associated helpers.
 -The IActionResult return type is appropriate when multiple ActionResult return types are possible in an action.
 *Use IAction result as a parent so that if you are returning/ using multiple action results it will work perfectly.
+
 8.1.1) Action Result in Razor Pages
 - ContentResult:- Takes Sting and return it with plain text.
 - FileContentResult:- Return a file from byte array, stream or virtual path.
@@ -69,6 +70,7 @@ Id is  an optional feild Controller and action are compulsory. If action and con
 - PartialRsult:- Return a partial result.
 - RedirectToPageResult:- Redirect user to specific page.
 - ViewComponentResult:- Return the result of executing ViewComponent.
+
 8.1.2) Action Result in MVC
 - ViewResult:- Renders view as a WebPage.
 - PartialViewResult:- Renders a partial view. which means a section of view can be rendered into another view.

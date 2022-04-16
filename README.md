@@ -19,11 +19,13 @@ Represents the user interface
 
 5.1) Shared
 It is used for partial views. It is  basically a view you can call within a view in multiple places in your application.
+
 5.1.1)_Layout
 It is  a special partial view which is the  default master page of your application
 
 5.2) _ViewImport
 If you want to access some namespaces everywhere inside your application you will add them in _ViewImport
+
 5.2.1)Tag Helper
 -They are introduced with .NET Core.
 -They enables server-side code to participate in creating and rendering HTLML elements in Razor files.	

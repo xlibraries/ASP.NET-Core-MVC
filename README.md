@@ -27,9 +27,9 @@ It is  a special partial view which is the  default master page of your applicat
 If you want to access some namespaces everywhere inside your application you will add them in _ViewImport
 
 5.2.1)Tag Helper
--They are introduced with .NET Core.
--They enables server-side code to participate in creating and rendering HTLML elements in Razor files.	
--They are very much focused on HTML element and much more natural to use.
+	-They are introduced with .NET Core.
+	-They enables server-side code to participate in creating and rendering HTLML elements in Razor files.	
+	-They are very much focused on HTML element and much more natural to use.
 
 
 5.3) _ViewStart
@@ -59,27 +59,27 @@ Id is  an optional feild Controller and action are compulsory. If action and con
 8)Return Types
 
 8.1)Action Result
--It is a result of action methods/ pages or retun type of action methods/ pages handlers.
--It is a parent class of many derived classes that have associated helpers.
--The IActionResult return type is appropriate when multiple ActionResult return types are possible in an action.
+	-It is a result of action methods/ pages or retun type of action methods/ pages handlers.
+	-It is a parent class of many derived classes that have associated helpers.
+	-The IActionResult return type is appropriate when multiple ActionResult return types are possible in an action.
 *Use IAction result as a parent so that if you are returning/ using multiple action results it will work perfectly.
 
 8.1.1) Action Result in Razor Pages
-- ContentResult:- Takes Sting and return it with plain text.
-- FileContentResult:- Return a file from byte array, stream or virtual path.
-- NotFoundResult:- Return a Http 404 (Not Found) status.
-- PageResult:- Will process andd return the resullt of current page.
-- PartialRsult:- Return a partial result.
-- RedirectToPageResult:- Redirect user to specific page.
-- ViewComponentResult:- Return the result of executing ViewComponent.
+	- ContentResult:- Takes Sting and return it with plain text.
+	- FileContentResult:- Return a file from byte array, stream or virtual path.
+	- NotFoundResult:- Return a Http 404 (Not Found) status.
+	- PageResult:- Will process andd return the resullt of current page.
+	- PartialRsult:- Return a partial result.
+	- RedirectToPageResult:- Redirect user to specific page.
+	- ViewComponentResult:- Return the result of executing ViewComponent.
 
 8.1.2) Action Result in MVC
-- ViewResult:- Renders view as a WebPage.
-- PartialViewResult:- Renders a partial view. which means a section of view can be rendered into another view.
-- RedirectResult:- redirect to another action method using it's URL.
-- RedirectToRouteResult:- Redirect to another action menthod.
-- ContentResult:- Return a user defined content type.
-- JsonResult:- Return a serilized JSON object.
-- JavaScriptResult:- Return a script that can be executed on the client.
-- FileResult:- Return binary output to write to the response.
-- EmptyResult:- Repersents a return value that is used if the action method must return a null result(void).
+	- ViewResult:- Renders view as a WebPage.
+	- PartialViewResult:- Renders a partial view. which means a section of view can be rendered into another view.
+	- RedirectResult:- redirect to another action method using it's URL.
+	- RedirectToRouteResult:- Redirect to another action menthod.
+	- ContentResult:- Return a user defined content type.
+	- JsonResult:- Return a serilized JSON object.
+	- JavaScriptResult:- Return a script that can be executed on the client.
+	- FileResult:- Return binary output to write to the response.
+	- EmptyResult:- Repersents a return value that is used if the action method must return a null result(void).

@@ -93,3 +93,4 @@ With Entity FrameWork there are two types of approaches:-
 1) Temp data:- data stored in memory for one redirect. that mean if you refresh the page memory lost.
 
 ------------------------------------------------------N-Tier Acrhitecture--------------------------------------------------------------
+Structure your project in suct a way where models, data access and utilities are present in different sub project not as a part of folders in same project

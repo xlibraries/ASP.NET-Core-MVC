@@ -94,3 +94,23 @@ With Entity FrameWork there are two types of approaches:-
 
 ------------------------------------------------------N-Tier Acrhitecture--------------------------------------------------------------
 Structure your project in suct a way where models, data access and utilities are present in different sub project not as a part of folders in same project
+
+------------------------------------------------------Repository Pattern--------------------------------------------------------------
+-It provides an abstraction of data.
+-Minimize duplicate logic
+-It decouples your application from persistent frameworks(in this case entity framework), hence in future we can change persistence framework with minimal impact.
+
+1) Unit of Work:- The unit of work class coordinates the work of multiple repositories by creating a single database context class shared by all of them.
+										_________________________	
+									     |	Unit of Work	  |
+							                 |				  |
+							Controller------>|Repositiory	  Repositiory |------>Entity Framwork
+									     |				  |	   and Database
+									     |	Db Context	 	  |
+									     |__________________________|
+2) DbSet(As a repository)		|	DbContext(As a Unity of work)
+						|	   
+   - Add(obj)				|   	-DbSet()
+   - Remove(obj)				|   	-DbSet()
+   - FirstOrDefault(exprission)	|   	-DbSet()
+   - Where(expression)			|   	-SaveChanges()
